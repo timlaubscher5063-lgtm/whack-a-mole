@@ -1,6 +1,7 @@
 import { useGame } from "./GameContext";
 import Scoreboard from "./Scoreboard";
 import Welcome from "./Welcome";
+import Field from "./Field";
 
 export default function App() {
   const { playing } = useGame();
@@ -10,6 +11,7 @@ export default function App() {
       {playing ? (
         <>
           <Scoreboard />
+          <Field />
         </>
       ) : (
         <Welcome />
